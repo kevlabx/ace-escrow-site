@@ -9,11 +9,11 @@
   <meta name="theme-color" content="#0A2B4E" />
   <meta name="color-scheme" content="light dark" />
 
-  <!-- Social (remove og:image if you don't upload it) -->
+  <!-- Social: point image to an existing file to avoid 404 -->
   <meta property="og:title" content="Ace Escrow Services — Cerritos, CA" />
   <meta property="og:description" content="Independent escrow: residential, refinance, commercial, bulk." />
-  <meta property="og:image" content="assets/og.jpg" />
-  <link rel="canonical" href="https://aceescrowservices.com/"/>
+  <meta property="og:image" content="assets/hero.jpg" />
+  <link rel="canonical" href="https://aceescrowservices.com/" />
 
   <!-- Fonts + CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,7 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <!-- Schema (logo points to a file that exists locally) -->
+  <!-- Schema: logo set to an existing file -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -49,14 +49,13 @@
   </script>
 </head>
 <body>
-  <!-- Accessibility: keyboard skip -->
+  <!-- Accessibility -->
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Header / Navigation -->
+  <!-- Header / Nav -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#">
-        <!-- Inline SVG logo -->
         <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
           <path fill="#0A2B4E" d="M8 22l24-10 24 10v20L32 52 8 42z"></path>
           <path fill="#26C281" d="M32 14l18 7v16L32 44 14 37V21z"></path>
@@ -72,13 +71,12 @@
           <li><a href="#compliance">Compliance</a></li>
           <li><a href="#contact" class="btn btn-sm">Contact</a></li>
         </ul>
-        <!-- Dark mode toggle -->
         <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
       </nav>
     </div>
   </header>
 
-  <!-- Hero with branded background -->
+  <!-- Hero -->
   <section class="hero" id="main">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-grid">
@@ -180,7 +178,6 @@
         <h2>Contact</h2>
         <p>We respond within one business day.</p>
         <form class="form" action="https://formspree.io/f/your-id" method="POST">
-          <!-- Honeypot to reduce spam -->
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden />
           <label>Full name<input name="name" required placeholder="Your name"></label>
           <label>Email<input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@company.com"></label>
@@ -216,7 +213,7 @@
     </div>
   </footer>
 
-  <!-- Mobile sticky CTA -->
+  <!-- Sticky mobile CTA -->
   <a class="sticky-cta" href="#contact">Request a quote</a>
 
   <!-- JS -->
