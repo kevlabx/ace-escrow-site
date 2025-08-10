@@ -1,12 +1,11 @@
 // Minimal offline cache for static assets
-const V = 'ace-escrow-v1';
+const V = 'ace-escrow-v3'; // bump to force clients to refresh
 const ASSETS = [
   './',
   './index.html',
   './assets/style.css',
   './assets/app.js',
-  './assets/hero.jpg'      // ensure this exists
-  // add './assets/hero@2x.jpg' if you upload it
+  './assets/hero.jpg' // must exist
 ];
 
 self.addEventListener('install', e => {
@@ -23,7 +22,5 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
-  e.respondWith(
-    caches.match(e.request).then(r => r || fetch(e.request))
-  );
+  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
 });
