@@ -1,5 +1,5 @@
 // Static cache
-const V='ace-escrow-v6';
+const V = 'ace-escrow-v7';
 const ASSETS=[
   './',
   './index.html',
