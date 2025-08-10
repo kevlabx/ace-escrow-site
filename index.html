@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ace Escrow Services | Secure Mortgage Closings</title>
   <meta name="description" content="Independent escrow corporation specializing in sales, short sales, refinance, multiple, commercial and bulk escrow, notary and related services." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0A2B4E" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Social (remove og:image if you don't upload it) -->
+  <meta property="og:title" content="Ace Escrow Services — Cerritos, CA" />
+  <meta property="og:description" content="Independent escrow: residential, refinance, commercial, bulk." />
+  <meta property="og:image" content="assets/og.jpg" />
+  <link rel="canonical" href="https://aceescrowservices.com/"/>
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%230A2B4E' d='M8 22l24-10 24 10v20L32 52 8 42z'/%3E%3Cpath fill='%2326C281' d='M32 14l18 7v16L32 44 14 37V21z'/%3E%3Cpath fill='white' d='M22 30h20v4H22z'/%3E%3C/svg%3E">
-  <meta name="theme-color" content="#0A2B4E">
+  <link rel="icon" href="assets/favicon.png" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- Schema (logo points to a file that exists locally) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"FinancialService",
     "name":"Ace Escrow Services",
     "url":"https://aceescrowservices.com",
-    "logo":"https://aceescrowservices.com/assets/ace-logo.svg",
+    "logo":"assets/favicon.png",
     "description":"Independent escrow corporation specializing in sales, short sales, refinance, multiple, commercial and bulk escrow, notary and related services.",
     "address":{
       "@type":"PostalAddress",
@@ -33,9 +49,14 @@
   </script>
 </head>
 <body>
+  <!-- Accessibility: keyboard skip -->
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#">
+        <!-- Inline SVG logo -->
         <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
           <path fill="#0A2B4E" d="M8 22l24-10 24 10v20L32 52 8 42z"></path>
           <path fill="#26C281" d="M32 14l18 7v16L32 44 14 37V21z"></path>
@@ -51,65 +72,71 @@
           <li><a href="#compliance">Compliance</a></li>
           <li><a href="#contact" class="btn btn-sm">Contact</a></li>
         </ul>
+        <!-- Dark mode toggle -->
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <!-- Hero with branded background -->
+  <section class="hero" id="main">
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-grid">
       <div class="hero-copy">
-        <h1>Close with confidence in California.</h1>
-        <p>Independent escrow services in Cerritos, CA. Sales, short sales, refinance, commercial, bulk escrow, and notary.</p>
+        <h1>Close on time. Zero surprises.</h1>
+        <p>Independent escrow in Cerritos, CA. Residential, refinance, commercial, and bulk escrow with clear communication.</p>
         <div class="hero-cta">
           <a href="#contact" class="btn">Request a quote</a>
           <a href="#services" class="btn btn-outline">See services</a>
         </div>
-        <div class="trust"><span>Secure • Compliant • On-time funding</span></div>
-      </div>
-      <div class="hero-media">
-        <img src="https://picsum.photos/seed/escrow/960/720" alt="Team reviewing escrow documents" />
+        <ul class="proof">
+          <li>ALTA-aligned controls</li>
+          <li>Dual-control wires</li>
+          <li>Secure e-sign ready</li>
+        </ul>
       </div>
     </div>
   </section>
 
+  <!-- Services -->
   <section id="services" class="section">
     <div class="container">
       <h2>Core services</h2>
-      <div class="cards">
-        <article class="card">
+      <div class="cards stagger">
+        <article class="card svc">
           <h3>Sales & Short Sales</h3>
-          <p>Open and manage purchase escrows, including short sale coordination and lender approvals.</p>
+          <p>Purchase escrows, short-sale coordination, lender approvals.</p>
           <ul class="bullets">
-            <li>Offer to close oversight</li>
-            <li>Short sale package handling</li>
-            <li>Payoff and statement coordination</li>
+            <li>Offer-to-close oversight</li>
+            <li>Short-sale packages</li>
+            <li>Payoff coordination</li>
           </ul>
         </article>
-        <article class="card">
+        <article class="card svc">
           <h3>Refinance & Multiple</h3>
-          <p>Refi and multi-party transactions with clear timelines and proactive status updates.</p>
+          <p>Refi and multi-party files with proactive status updates.</p>
           <ul class="bullets">
             <li>CD/HUD preparation</li>
             <li>Lender portal collaboration</li>
-            <li>E-sign ready packages</li>
+            <li>E-sign packages</li>
           </ul>
         </article>
-        <article class="card">
+        <article class="card svc">
           <h3>Commercial & Bulk Escrow</h3>
-          <p>Commercial settlements and bulk escrow services with secure disbursements and recording.</p>
+          <p>Entity verification, funds control, recording and accounting.</p>
           <ul class="bullets">
-            <li>Entity/KYC verification</li>
-            <li>Funds control and audit trail</li>
-            <li>Recording and final accounting</li>
+            <li>KYC for entities</li>
+            <li>Audit-ready trails</li>
+            <li>Secure disbursements</li>
           </ul>
         </article>
-        <article class="card">
-          <h3>Notary & Related Services</h3>
+        <article class="card svc">
+          <h3>Notary & Related</h3>
           <p>Mobile notary scheduling and document execution support.</p>
           <ul class="bullets">
-            <li>After-hours availability</li>
-            <li>Remote online notarization* </li>
-            <li>Courier and secure delivery</li>
+            <li>After-hours options</li>
+            <li>RON* where allowed</li>
+            <li>Courier delivery</li>
           </ul>
         </article>
       </div>
@@ -117,18 +144,20 @@
     </div>
   </section>
 
+  <!-- Process -->
   <section id="process" class="section alt">
     <div class="container">
       <h2>Process</h2>
-      <div class="steps">
-        <div class="step"><span>1</span><h4>Open</h4><p>Order received. Welcome packet sent within one business hour.</p></div>
-        <div class="step"><span>2</span><h4>Verify</h4><p>KYC/AML checks, payoff orders, HOA/Tax requests initiated.</p></div>
+      <div class="steps stagger">
+        <div class="step"><span>1</span><h4>Open</h4><p>Order received. Welcome packet within one business hour.</p></div>
+        <div class="step"><span>2</span><h4>Verify</h4><p>KYC/AML, payoff orders, HOA/Tax requests initiated.</p></div>
         <div class="step"><span>3</span><h4>Prepare</h4><p>Title cleared. Docs balanced with lender. Signing scheduled.</p></div>
-        <div class="step"><span>4</span><h4>Fund</h4><p>Funds balanced, recording submitted, disbursements complete.</p></div>
+        <div class="step"><span>4</span><h4>Fund</h4><p>Funds balanced. Recording submitted. Disbursements complete.</p></div>
       </div>
     </div>
   </section>
 
+  <!-- Compliance -->
   <section id="compliance" class="section">
     <div class="container">
       <h2>Security & compliance</h2>
@@ -144,29 +173,33 @@
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="section alt">
     <div class="container contact-grid">
       <div>
         <h2>Contact</h2>
         <p>We respond within one business day.</p>
         <form class="form" action="https://formspree.io/f/your-id" method="POST">
-          <label>Full name<input name="name" required></label>
-          <label>Email<input type="email" name="email" required></label>
-          <label>Phone<input type="tel" name="phone"></label>
+          <!-- Honeypot to reduce spam -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden />
+          <label>Full name<input name="name" required placeholder="Your name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@company.com"></label>
+          <label>Phone<input type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+\\-\\s()]{7,}" placeholder="(555) 123-4567"></label>
           <label>Message<textarea name="message" rows="5" placeholder="Transaction type, state, target close date"></textarea></label>
           <button class="btn" type="submit">Submit</button>
-          <p class="tiny">Do not send account numbers or sensitive info.</p>
+          <p class="tiny form-msg" role="status" aria-live="polite">Do not send account numbers or sensitive info.</p>
         </form>
       </div>
       <div class="contact-card">
         <h3>Office</h3>
         <p>13247 South Street, Cerritos, CA 90703</p>
         <p><a href="tel:+15628603881">(562) 860-3881</a><br>Fax: (562) 860-2271</p>
-        <img src="https://picsum.photos/seed/office/640/480" alt="Office lobby" />
+        <img src="https://picsum.photos/seed/office/640/480" alt="Office lobby" loading="lazy" decoding="async" width="640" height="480" />
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
@@ -183,6 +216,10 @@
     </div>
   </footer>
 
+  <!-- Mobile sticky CTA -->
+  <a class="sticky-cta" href="#contact">Request a quote</a>
+
+  <!-- JS -->
   <script src="assets/app.js"></script>
 </body>
 </html>
