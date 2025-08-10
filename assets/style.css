@@ -126,6 +126,7 @@ input:invalid,textarea:invalid{border-color:#ef4444}
 .stagger>.card.in,.stagger>.step.in{opacity:1;transform:none}
 
 /* Mobile CTA */
+/* Mobile CTA */
 .sticky-cta{position:fixed;left:0;right:0;bottom:env(safe-area-inset-bottom);display:none;place-items:center;background:var(--accent);color:#fff;text-align:center;padding:14px 16px;font-weight:800;z-index:50;text-decoration:none}
 @media (max-width:720px){.sticky-cta{display:grid} .nav .btn-sm{display:none}}
 
@@ -136,4 +137,6 @@ input:invalid,textarea:invalid{border-color:#ef4444}
   .hero-grid,.cards,.steps,.grid-2,.contact-grid,.footer-grid{grid-template-columns:1fr}
   .nav-links{display:none}
   .nav-toggle{display:inline}
+}
+
 }
