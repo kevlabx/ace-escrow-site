@@ -191,20 +191,22 @@
         <h2>Contact</h2>
         <p>We respond within one business day.</p>
 
-        <!-- Simple mailto form (opens user’s email client) -->
-        <form class="form" action="mailto:escrow@aceescrowservices.com" method="POST" enctype="text/plain">
+        <!-- Switched to JS submit to Google Apps Script -->
+        <form class="form" id="contact-form" novalidate>
           <input type="hidden" id="intent-field" name="intent" value="">
+          <!-- simple honeypot -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
           <label>Full name
-            <input name="name" required placeholder="Your name">
+            <input name="name" required placeholder="Your name" autocomplete="name">
           </label>
           <label>Email
             <input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@company.com">
           </label>
           <label>Phone
-            <input type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+\\-\\s()]{7,}" placeholder="(555) 123-4567">
+            <input type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+\-\s()]{7,}" placeholder="(555) 123-4567">
           </label>
           <label>Message
-            <textarea name="message" rows="5" placeholder="Transaction type, state, target close date"></textarea>
+            <textarea name="message" rows="5" required placeholder="Transaction type, state, target close date"></textarea>
           </label>
           <button class="btn" type="submit">Submit</button>
           <p class="tiny form-msg" role="status" aria-live="polite">Do not send account numbers or sensitive info.</p>

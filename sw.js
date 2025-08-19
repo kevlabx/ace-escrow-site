@@ -1,12 +1,12 @@
 // sw.js — American Classic Escrow
-const V = 'ace-escrow-v13';
+const V = 'ace-escrow-v14';
 
 const ASSETS = [
   './',
   './index.html',
   './thanks.html',
-  './assets/style.css?v=4',
-  './assets/app.js?v=4',
+  './assets/style.css',        // match actual href
+  './assets/app.js?v=5',       // match actual script tag
   './assets/hero.jpg',
   './assets/logo.png'
 ];
@@ -53,4 +53,3 @@ self.addEventListener('fetch', (e) => {
     );
   }
 });
-  
