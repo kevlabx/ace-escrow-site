@@ -275,17 +275,17 @@ if ('serviceWorker' in navigator) {
         // strong repulsion
         if (active){
           const dx = b.x - mx, dy = b.y - my;
-          const d2 = dx*dx + dy*dy, R = 220;                  // bigger radius
+          const d2 = dx*dx + dy*dy, R = 220;
           if (d2 < R*R){
             const d = Math.max(Math.sqrt(d2), 0.001);
-            const f = (R - d)/R * 1.6;                        // stronger impulse
+            const f = (R - d)/R * 1.6;
             b.vx += (dx/d) * f * 1.2;
             b.vy += (dy/d) * f * 1.2;
           }
         }
 
         // clamp + move
-        const max = 1.35;                                     // faster top speed
+        const max = 1.35;
         b.vx = Math.max(-max, Math.min(max, b.vx));
         b.vy = Math.max(-max, Math.min(max, b.vy));
         b.x += b.vx; b.y += b.vy;
@@ -372,8 +372,8 @@ if ('serviceWorker' in navigator) {
       return;
     }
 
-    // honeypot trap
-    const hp = form.querySelector('input[name="website"]');
+    // honeypot trap (Apps Script expects _gotcha)
+    const hp = form.querySelector('input[name="_gotcha"]');
     if (hp && hp.value.trim() !== '') {
       setStatus('Thanks!'); // silently ignore bots
       submitBtn && (submitBtn.textContent = 'Submitted');
@@ -385,6 +385,7 @@ if ('serviceWorker' in navigator) {
     try {
       const fd = new FormData(form);
       fd.append('site', location.hostname);
+      fd.append('page', location.href); // show which page produced the message
 
       // Apps Script often lacks CORS headers; use no-cors to avoid blocking
       await fetch(GAS_URL, {

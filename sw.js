@@ -5,8 +5,8 @@ const ASSETS = [
   './',
   './index.html',
   './thanks.html',
-  './assets/style.css',        // match actual href
-  './assets/app.js?v=5',       // match actual script tag
+  './assets/style.css',   // no ?v
+  './assets/app.js?v=5',  // matches index.html
   './assets/hero.jpg',
   './assets/logo.png'
 ];
@@ -40,16 +40,13 @@ self.addEventListener('fetch', (e) => {
 
   if (url.origin === location.origin) {
     e.respondWith(
-      caches.match(req).then((hit) => {
-        if (hit) return hit;
-        return fetch(req).then((res) => {
-          if (res && res.status === 200 && req.method === 'GET') {
-            const copy = res.clone();
-            caches.open(V).then((c) => c.put(req, copy));
-          }
-          return res;
-        });
-      })
+      caches.match(req).then((hit) => hit || fetch(req).then((res) => {
+        if (res && res.status === 200 && req.method === 'GET') {
+          const copy = res.clone();
+          caches.open(V).then((c) => c.put(req, copy));
+        }
+        return res;
+      }))
     );
   }
 });
