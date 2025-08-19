@@ -4,13 +4,13 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>American Classic Escrow | Secure Mortgage Closings</title>
-  <meta name="description" content="Independent escrow corporation in Cerritos, CA specializing in sales, short sales, refinance, multiple, commercial and bulk escrow, notary and related services."/>
+  <meta name="description" content="DFPI-approved independent escrow in Cerritos, CA. Sales, refinance, REO, short sale, 1031 exchange support, notary & related services."/>
   <meta name="theme-color" content="#0A2B4E"/>
   <meta name="color-scheme" content="light dark"/>
 
   <!-- Social -->
   <meta property="og:title" content="American Classic Escrow — Cerritos, CA"/>
-  <meta property="og:description" content="Independent escrow: residential, refinance, commercial, bulk."/>
+  <meta property="og:description" content="Independent escrow: sales, refinance, REO, short sale, 1031 support."/>
   <meta property="og:image" content="assets/logo.png"/>
   <link rel="canonical" href="https://aceescrowservices.com/"/>
 
@@ -32,7 +32,7 @@
     "name":"American Classic Escrow",
     "url":"https://aceescrowservices.com",
     "logo":"assets/logo.png",
-    "description":"Independent escrow corporation specializing in sales, short sales, refinance, multiple, commercial and bulk escrow, notary and related services.",
+    "description":"DFPI-approved independent escrow corporation specializing in sales, refinance, REO, short sale, 1031 exchange support, and notary services.",
     "address":{"@type":"PostalAddress","streetAddress":"13247 South Street","addressLocality":"Cerritos","addressRegion":"CA","postalCode":"90703","addressCountry":"US"},
     "telephone":"+1-562-860-3881","faxNumber":"+1-562-860-2271","areaServed":"US"
   }
@@ -41,98 +41,136 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#">
         <img class="logo" src="assets/logo.png" alt="American Classic Escrow logo">
         <span class="brand-text">American Classic Escrow</span>
       </a>
-      <nav>
+
+      <nav class="navbar">
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
         <ul class="nav-links">
           <li><a href="#services">Services</a></li>
           <li><a href="#process">Process</a></li>
           <li><a href="#compliance">Compliance</a></li>
-          <li><a href="#contact" class="btn btn-sm">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a id="open-order-nav" class="btn btn-sm" href="#contact" data-intent="Open Order">Open order</a></li>
         </ul>
+        <!-- Right-side controls -->
         <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+        <button class="ambient-toggle" aria-label="Toggle floating icons" title="Disable floating icons">🫧</button>
       </nav>
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero" id="main">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-grid">
       <div class="hero-copy">
-        <h1>Close on time. Zero surprises.</h1>
-        <p>Independent escrow in Cerritos, CA. Residential, refinance, commercial, and bulk escrow with clear communication.</p>
+        <h1>Independent Escrow in Cerritos, CA</h1>
+        <p>Sale • Refinance • REO • Short Sale • 1031 Exchange. DFPI-approved, with clear communication from open to close.</p>
         <div class="hero-cta">
-          <a href="#contact" class="btn">Request a quote</a>
-          <a href="#services" class="btn btn-outline">See services</a>
+          <a id="open-order-hero" href="#contact" class="btn" data-intent="Open Order">Open order</a>
+          <a href="#contact" class="btn btn-outline">Request a quote</a>
         </div>
         <ul class="proof">
-          <li>ALTA-aligned controls</li>
-          <li>Dual-control wires</li>
-          <li>Secure e-sign ready</li>
+          <li>DFPI-approved Independent Escrow</li>
+          <li>Dual-confirmation before any wire</li>
+          <li>We never change wire instructions by email</li>
         </ul>
       </div>
     </div>
   </section>
 
+  <!-- Intro -->
+  <section class="section alt">
+    <div class="container">
+      <h2>What we do</h2>
+      <p class="lead">We’re a neutral third party that protects buyers, sellers, and lenders. We hold funds in trust, collect and prepare documents, coordinate with everyone involved, and release money only when every contract condition is met.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
   <section id="services" class="section">
     <div class="container">
       <h2>Core services</h2>
       <div class="cards stagger">
         <article class="card svc">
           <h3>Sales & Short Sales</h3>
-          <p>Purchase escrows, short-sale coordination, lender approvals.</p>
+          <p>Purchase escrows and short-sale coordination with lender approvals.</p>
           <ul class="bullets">
-            <li>Offer-to-close oversight</li><li>Short-sale packages</li><li>Payoff coordination</li>
+            <li>Offer-to-close oversight</li>
+            <li>Short-sale packages</li>
+            <li>Payoff coordination</li>
           </ul>
         </article>
+
         <article class="card svc">
-          <h3>Refinance & Multiple</h3>
+          <h3>Refinance & Multiple Escrows</h3>
           <p>Refi and multi-party files with proactive status updates.</p>
           <ul class="bullets">
-            <li>CD/HUD preparation</li><li>Lender portal collaboration</li><li>E-sign packages</li>
+            <li>CD/HUD preparation</li>
+            <li>Lender portal collaboration</li>
+            <li>E-sign packets</li>
           </ul>
         </article>
+
         <article class="card svc">
-          <h3>Commercial & Bulk Escrow</h3>
-          <p>Entity verification, funds control, recording and accounting.</p>
+          <h3>REO Transactions</h3>
+          <p>Bank-owned sales handled with servicer requirements and timelines.</p>
           <ul class="bullets">
-            <li>KYC for entities</li><li>Audit-ready trails</li><li>Secure disbursements</li>
+            <li>Servicer communication</li>
+            <li>Document checklists</li>
+            <li>Closing coordination</li>
           </ul>
         </article>
+
+        <article class="card svc">
+          <h3>1031 Exchange Support</h3>
+          <p>Work directly with your Qualified Intermediary (QI) to meet deadlines.</p>
+          <ul class="bullets">
+            <li>Timeline tracking</li>
+            <li>Document routing</li>
+            <li>Funding coordination</li>
+          </ul>
+        </article>
+
         <article class="card svc">
           <h3>Notary & Related</h3>
           <p>Mobile notary scheduling and document execution support.</p>
           <ul class="bullets">
-            <li>After-hours options</li><li>RON* where allowed</li><li>Courier delivery</li>
+            <li>After-hours options</li>
+            <li>Remote online notary where permitted</li>
+            <li>Courier delivery</li>
           </ul>
         </article>
       </div>
-      <p class="note">*Subject to California law and lender requirements.</p>
+      <p class="note">Services subject to California law and lender requirements.</p>
     </div>
   </section>
 
+  <!-- Process -->
   <section id="process" class="section alt">
     <div class="container">
       <h2>Process</h2>
       <div class="steps stagger">
         <div class="step"><span>1</span><h4>Open</h4><p>Order received. Welcome packet within one business hour.</p></div>
-        <div class="step"><span>2</span><h4>Verify</h4><p>KYC/AML, payoff orders, HOA/Tax requests initiated.</p></div>
+        <div class="step"><span>2</span><h4>Verify</h4><p>Payoff orders, HOA/tax requests, and document collection begin.</p></div>
         <div class="step"><span>3</span><h4>Prepare</h4><p>Title cleared. Docs balanced with lender. Signing scheduled.</p></div>
-        <div class="step"><span>4</span><h4>Fund</h4><p>Funds balanced. Recording submitted. Disbursements complete.</p></div>
+        <div class="step"><span>4</span><h4>Fund & Record</h4><p>Funds balanced, recording submitted, disbursements complete.</p></div>
       </div>
     </div>
   </section>
 
+  <!-- Compliance -->
   <section id="compliance" class="section">
     <div class="container">
-      <h2>Security & compliance</h2>
+      <h2>Compliance & security</h2>
       <div class="grid-2">
-        <p>Controls align to ALTA Best Practices and GLBA expectations. Least-privilege access, encrypted exchange, and dual-control wiring reduce fraud risk.</p>
+        <p>Controls align with ALTA Best Practices and GLBA expectations. Least-privilege access, encrypted exchange, and dual-control wiring reduce fraud risk.</p>
         <ul class="checks">
           <li>Secure portals and e-sign</li>
           <li>Dual-control for wires</li>
@@ -140,33 +178,56 @@
           <li>Background-checked staff and notaries</li>
         </ul>
       </div>
+      <div class="callout" role="note">
+        <strong>Fraud alert:</strong> We never change wiring instructions by email. Always call our office at <a href="tel:+15628603881">(562) 860-3881</a> to verify.
+      </div>
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="section alt">
     <div class="container contact-grid">
       <div>
         <h2>Contact</h2>
         <p>We respond within one business day.</p>
-        <form class="form" action="https://formspree.io/f/your-id" method="POST">
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden>
-          <label>Full name<input name="name" required placeholder="Your name"></label>
-          <label>Email<input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@company.com"></label>
-          <label>Phone<input type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+\\-\\s()]{7,}" placeholder="(555) 123-4567"></label>
-          <label>Message<textarea name="message" rows="5" placeholder="Transaction type, state, target close date"></textarea></label>
+
+        <!-- Simple mailto form (opens user’s email client) -->
+        <form class="form" action="mailto:escrow@aceescrowservices.com" method="POST" enctype="text/plain">
+          <input type="hidden" id="intent-field" name="intent" value="">
+          <label>Full name
+            <input name="name" required placeholder="Your name">
+          </label>
+          <label>Email
+            <input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@company.com">
+          </label>
+          <label>Phone
+            <input type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+\\-\\s()]{7,}" placeholder="(555) 123-4567">
+          </label>
+          <label>Message
+            <textarea name="message" rows="5" placeholder="Transaction type, state, target close date"></textarea>
+          </label>
           <button class="btn" type="submit">Submit</button>
           <p class="tiny form-msg" role="status" aria-live="polite">Do not send account numbers or sensitive info.</p>
+          <p class="tiny note-bottom">Prefer email? <a href="mailto:escrow@aceescrowservices.com">escrow@aceescrowservices.com</a></p>
         </form>
       </div>
+
       <div class="contact-card">
-        <h3>Office</h3>
-        <p>13247 South Street, Cerritos, CA 90703</p>
-        <p><a href="tel:+15628603881">(562) 860-3881</a><br>Fax: (562) 860-2271</p>
-        <!img src="https://picsum.photos/seed/office/640/480" alt="Office lobby" loading="lazy" decoding="async" width="640" height="480">
+        <div class="contact-card-body">
+          <h3>Office</h3>
+          <p>13247 South Street, Cerritos, CA 90703</p>
+          <p><a href="tel:+15628603881">(562) 860-3881</a><br>Fax: (562) 860-2271</p>
+          <div class="contact-actions">
+            <a class="btn btn-light" href="tel:+15628603881">Call office</a>
+            <a class="btn btn-outline" href="mailto:escrow@aceescrowservices.com">Email us</a>
+          </div>
+          <p class="tiny muted">We never change wiring instructions by email.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
@@ -178,12 +239,20 @@
         <li><a href="#process">Process</a></li>
         <li><a href="#compliance">Compliance</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#" aria-disabled="true">Privacy</a></li>
+        <li><a href="#" aria-disabled="true">Terms</a></li>
       </ul>
-      <p class="tiny">© <span id="year"></span> American Classic Escrow • 13247 South St, Cerritos, CA 90703 • (562) 860-3881 • Not a law firm or lender.</p>
+      <p class="tiny">© <span id="year"></span> American Classic Escrow • <a href="https://maps.google.com/?q=13247 South Street, Cerritos, CA 90703" target="_blank" rel="noopener">13247 South St, Cerritos, CA 90703</a> • <a href="tel:+15628603881">(562) 860-3881</a> • <a href="mailto:escrow@aceescrowservices.com">escrow@aceescrowservices.com</a> • Not a law firm or lender.</p>
     </div>
   </footer>
 
-  <a class="sticky-cta" href="#contact">Request a quote</a>
-  <script src="assets/app.js"></script>
+  <!-- Mobile sticky CTA -->
+  <a class="sticky-cta" href="#contact" id="open-order-sticky" data-intent="Open Order">Open order</a>
+
+  <!-- Global floating escrow-themed icons overlay (must be before script) -->
+  <div class="ambient-global" aria-hidden="true"></div>
+
+  <!-- JS (defer so it runs after DOM is parsed) -->
+  <script src="assets/app.js?v=5" defer></script>
 </body>
 </html>
